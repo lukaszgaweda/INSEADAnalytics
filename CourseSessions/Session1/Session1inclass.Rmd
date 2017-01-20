@@ -1,6 +1,6 @@
 ---
 title: "Session 1"
-author: "T. Evgeniou"
+author: "Lukasz"
 output: html_document
 ---
 
@@ -41,8 +41,7 @@ One of the major benefits of using open source software is the impressive availa
 
 There are many ways to get new tools. First, "mature/tested" tools are available as "packages" that you can install through your RStudio. Take a look at this [list of R packages](https://cran.r-project.org/web/packages/available_packages_by_name.html) and see which ones you like. 
 
-To install a package in R click on the "Packages" menu and then on "Install" and type the name of the package to install, also selecting "Install dependencies", as indicated in this figure: 
-
+To install a package in R click on the "Packages" lib
 !["How to install a package"](installpackage.png)
 
 This will download the package - hence you need to be online. You can then "load" the library by either slecting it in the list of packages you have or using the `library` command in R, for example `library("Rfacebook")`. 
@@ -80,6 +79,10 @@ An alternative way to get code (and see sample code - best way to learn) is to s
 4. Do you find some Facebook related use of R and code you can further explore? How about for [Twitter](https://cran.r-project.org/web/packages/twitteR/twitteR.pdf)? 
 
 <hr>
+1. Yes, I can install them from "packages menu" -> "install"
+2.I like the "datasets" package as there is a lot of interesting and random sets (e.g InsectSprays)
+3. Yes. I forked a deeplearing repository
+4. Unfortunately I don't use either of them.
 <hr>
 
 ### Read/Write Data
@@ -96,13 +99,14 @@ Let's see what this data is Run these commands to see the number of rows, number
 
 ```{r eval = FALSE, echo=TRUE, comment=NA, warning=FALSE, message=FALSE,results='markup'}
 ncol(ProjectData)
-colnames(ProjectData)
+rownames(ProjectData)
 rownames(ProjectData)
 ```
 
 Do these look like what you see when you open the .csv file using Excel? 
 
 <hr>
+YEs - it looks similar
 <hr>
 
 ### Data Exploration: A Market Segmentation Case
@@ -151,6 +155,11 @@ The correlation matrix does not look pretty for now, but we will see example way
 **Your Answers here:**
 <br>
 <br>
+tab
+1. It's: "Q16_Name.of.the.Brand.rated"     
+2. the average is produced by mean(ProjectData[,4])
+3. The percentage share can be produced by: "r sum(ProjectData[,48]==1)/nrow(ProjectData)"
+
 <br>
 <br>
 
