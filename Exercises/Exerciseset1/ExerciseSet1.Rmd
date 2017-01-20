@@ -95,6 +95,9 @@ pnl_plot(SPY)
 - cumulative retunrs from: sum(StockReturns[,2]) 
 - average from: mean(StockReturns[,2])
 - std from: sd(StockReturns[,2])
+
+3. Yes, we need to change the sticker in the data importing script to YAhoo sticker
+mytickers = c("SPY", "YHOO")
 <br>
 <br>
 
@@ -135,6 +138,16 @@ We can also transpose the matrix of returns to create a new "horizontal" matrix.
 
 **Your Answers here:**
 <br>
+We set up a new data variable:
+transposedData <- t(StockReturns)
+
+We use nrow(transposedData) for number of rows and ncol(transposedData) for number of columns
+
+2.
+
+t_portfolio <- apply(transposedData,2,mean)
+names(t_portfolio) <- colnames(transposedData)
+pnl_plot(t_portfolio)
 <br>
 <br>
 <br>
@@ -153,8 +166,8 @@ This is an important step and will get you to think about the overall process on
 
 **Your Answers here:**
 <br>
-<br>
-<br>
+1. In dataSet1.R file I have to change startDate to "2005-01-01" 
+2. In dataSet1.R file I need to edit the myticker varbiable  
 <br>
 
 <hr>
