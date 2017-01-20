@@ -308,10 +308,15 @@ I have found a nice Bloomberg package that allows to download the trading volume
 <ul>
 <li>cumulative retunrs from: sum(StockReturns[,2]) </li>
 <li>average from: mean(StockReturns[,2])</li>
-<li>std from: sd(StockReturns[,2])
+<li>std from: sd(StockReturns[,2])</li>
+</ul>
+
+<ol>
+<li>Yes, we need to change the sticker in the data importing script to YAhoo sticker
+mytickers = c(&ldquo;SPY&rdquo;, &ldquo;YHOO&rdquo;)
 <br>
 <br></li>
-</ul>
+</ol>
 
 <hr>
 
@@ -347,6 +352,16 @@ tail(StockReturns,5)
 
 <p><strong>Your Answers here:</strong>
 <br>
+We set up a new data variable:
+transposedData &lt;- t(StockReturns)</p>
+
+<p>We use nrow(transposedData) for number of rows and ncol(transposedData) for number of columns</p>
+
+<p>2.</p>
+
+<p>t_portfolio &lt;- apply(transposedData,2,mean)
+names(t_portfolio) &lt;- colnames(transposedData)
+pnl_plot(t_portfolio)
 <br>
 <br>
 <br></p>
@@ -368,8 +383,8 @@ tail(StockReturns,5)
 
 <p><strong>Your Answers here:</strong>
 <br>
-<br>
-<br>
+1. In dataSet1.R file I have to change startDate to &ldquo;2005-01-01&rdquo; 
+2. In dataSet1.R file I need to edit the myticker varbiable<br/>
 <br></p>
 
 <hr>
@@ -402,7 +417,9 @@ tail(StockReturns,5)
 
 <p><strong>Your Answers here:</strong>
 <br>
+1. We try to compare whether the data after csv export-import has changed. In fact it did so - we can see that the improper use of the separator makes the overall data structure change
 <br>
+2. dont know :-(
 <br>
 <br></p>
 

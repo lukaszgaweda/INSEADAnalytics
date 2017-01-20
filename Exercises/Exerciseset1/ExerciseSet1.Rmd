@@ -200,7 +200,9 @@ myData + StockReturns[1:40,]
 
 **Your Answers here:**
 <br>
+1. We try to compare whether the data after csv export-import has changed. In fact it did so - we can see that the improper use of the separator makes the overall data structure change
 <br>
+2. dont know :-(
 <br>
 <br>
 
