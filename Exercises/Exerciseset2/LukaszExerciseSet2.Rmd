@@ -159,10 +159,20 @@ iprint.df(show_data, scale=TRUE)
 
 **Answers**
 
-*
-*
-*
-*
+* A1. It can be inferred from the table above that sum of top 6 components explains 52.29% of the variance of the data 
+* A2. Top 3 highest weights of the principal component portfolio are: 5 yr T-Notes US	(0.93); 10yr T-Notes (0.93) and Treasury Bonds	(0.83)
+* A3. My suggestion of the components interpretation is:
+  1: Bonds
+  2: Fx
+  3: European SE indexes
+  4. US SE indexes
+  5. Interbank rates/Europeand Bond market futures
+  6. Oil and oil-related commodity 
+  7. Metal commodities
+  8. Crop-related commodities
+  9. Precious-metal commodities
+  10. Asian stock indexes
+* A4.
 *
 *
 *
@@ -230,7 +240,7 @@ How does this compare with **existing CTA products** such as [this one from Soci
 
 **Answers**
 
-*
+* 
 *
 *
 *
